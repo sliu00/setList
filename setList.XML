@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="setListStyle.css"?>
+
+<SetList>
+    <Song>
+        <SongTitle> Indigo </SongTitle>
+        <SongArtist> NIKI, 88Rising </SongArtist>
+        <MusicGenre> R&amp;B/Soul </MusicGenre>
+        <ReleaseYear> 2019 </ReleaseYear>
+    </Song>
+
+    <Song>
+        <SongTitle> D (Half Moon) </SongTitle>
+        <SongArtist> DEAN, Gaeko </SongArtist>
+        <MusicGenre> R&amp;B/Soul </MusicGenre>
+        <ReleaseYear> 2016 </ReleaseYear>
+    </Song>
+
+    <Song>
+        <SongTitle> 3 Nights</SongTitle>
+        <SongArtist> Dominic Fike </SongArtist>
+        <MusicGenre> Alternative/Indie </MusicGenre>
+        <ReleaseYear> 2018 </ReleaseYear>
+    </Song>
+
+    <Song>
+        <SongTitle> ILYSB </SongTitle>
+        <SongArtist> LANY </SongArtist>
+        <MusicGenre> Indie Pop</MusicGenre>
+        <ReleaseYear> 2017 </ReleaseYear>
+    </Song>
+
+    <Song>
+        <SongTitle> Spring Day </SongTitle>
+        <SongArtist> BTS </SongArtist>
+        <MusicGenre> Kpop </MusicGenre>
+        <ReleaseYear> 2017 </ReleaseYear>
+    </Song>
+
+    <Song>
+        <SongTitle> Dank </SongTitle>
+        <SongArtist> Jay Park </SongArtist>
+        <MusicGenre> R&amp;B/Soul </MusicGenre>
+        <ReleaseYear> 2018 </ReleaseYear>
+    </Song>
+
+    <Song>
+        <SongTitle> My Tears Ricochet</SongTitle>
+        <SongArtist> Taylor Swift </SongArtist>
+        <MusicGenre> Alternative/Indie </MusicGenre>
+        <ReleaseYear> 2020 </ReleaseYear>
+    </Song>
+
+    <Song>
+        <SongTitle> Vintage </SongTitle>
+        <SongArtist> NIKI </SongArtist>
+        <MusicGenre> R&amp;B/Soul </MusicGenre>
+        <ReleaseYear> 2018 </ReleaseYear>
+    </Song>
+
+    <Song>
+        <SongTitle> Best Part</SongTitle>
+        <SongArtist> Daniel Caesar, H.E.R. </SongArtist>
+        <MusicGenre> R&amp;B/Soul </MusicGenre>
+        <ReleaseYear> 2017 </ReleaseYear>
+    </Song>
+
+    <Song>
+        <SongTitle> Grow </SongTitle>
+        <SongArtist> HOAX </SongArtist>
+        <MusicGenre> Alternative/Indie </MusicGenre>
+        <ReleaseYear> 2018 </ReleaseYear>
+    </Song>
+</SetList>
