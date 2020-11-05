@@ -8,9 +8,7 @@
     <body>
         <div id="serialized"></div>
         <hr>
-        <div id="prettier">
-    
-        </div>
+        <table id="prettier" style="width: 90%"></table>
         <hr>
         <script language="javascript" >
             $.getJSON( "setList.json", 
@@ -24,8 +22,8 @@
                     setList.forEach(function(song) { 
 
                         songStr += 
-                            "<div class='song'>" + "<div class='title'>" 
-                            + song.title + "</div>" + "</div>";
+                            "<tr class='song'>" + "<th class='title'>" 
+                            + song.title + "</th>" + "</tr>";
                         document.getElementById("prettier").innerHTML = songStr;
 
 
