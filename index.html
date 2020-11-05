@@ -32,8 +32,10 @@
 
                     var songStr = "";
                     setList.forEach(function(song) { 
-                     
-                        console.log("Artist: " + Object.keys(song.artists).length);
+                        console.log("SONG: " + song.title)
+                        for (var i = 0; i < Object.keys(song.artists).length; i++) {
+                            console.log(song.artists[i]);
+                        }
                     })
                 })
 
