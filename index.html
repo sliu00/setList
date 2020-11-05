@@ -7,14 +7,36 @@
     body {
         height: auto;
     }
+
+    table {
+        width: 100%;
+        padding: 5px;
+        border: 2px solid black;
+    }
+
+    td {
+        text-align: center;
+        border: 1px solid black;
+        border-right: 2px solid black;
+        padding: 5px;
+    }
+
+    table, td {
+        border-collapse: collapse;
+    }
+
+    th {
+        border: 2px solid black;
+    }
+   
 </style>
 <html>
     <body>
         <div id="serialized"></div>
         <hr>
-        <table id="setList" style="width: 90%">
-            <h2>JSON data displayed</h2>
-            <tr>
+        <table id="setList">
+            <h2>JSON data displayed in a table</h2>
+            <tr id="tableHeader">
                 <th>Song Title</th>
                 <th>Artist(s)</th>
                 <th>Genre(s)</th>
@@ -31,13 +53,30 @@
                 
                     setList.forEach(function(song) { 
                         var songStr = "";
-                        songStr += "<tr>" + "<td>" + song.title + "</td>" + "</tr>";
-                        document.getElementById("setList").innerHTML += songStr; 
 
-                        console.log("SONG: " + song.title)
-                        for (var i = 0; i < Object.keys(song.artists).length; i++) {
-                            console.log(song.artists[i]);
+                        var artists = "";
+                        var artistsLen = Object.keys(song.artists).length;
+                        //Get artists
+                        for (var i = 0; i < artistsLen; i++) {
+                            artists += song.artists[i]
+                            if (i < artistsLen - 1) {
+                                artists += ", ";
+                            }
                         }
+                        //Get genres
+                        var genres = "";
+                        var genreLen = Object.keys(song.genre).length;
+                        for (var i = 0; i < genreLen; i++) {
+                            genres += song.genre[i]
+                            if (i < genreLen - 1) {
+                                genres += ", ";
+                            }
+                        }
+
+                        songStr += "<tr>" + "<td>" + song.title + "</td>" + 
+                            "<td>" + artists + "</td>" + "<td>" + genres + "</td>" + 
+                            "<td>" + song.release + "</td>" + "</tr>";
+                        document.getElementById("setList").innerHTML += songStr; 
                     })
                 })
 
