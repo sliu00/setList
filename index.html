@@ -32,7 +32,7 @@
                     var songStr = "";
                     setList.forEach(function(song) { 
                         var artists = "";
-                        for (var artist in song.artists) {
+                        for (var artist in setList.getJSONArray("artists")) {
                             console.log(artist);
                             artists += artist;
                         }
