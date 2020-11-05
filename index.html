@@ -3,10 +3,11 @@
 <title>Set List</title>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script language="javascript" src="setList.json"></script>
+
 <html>
     <body>
         <script language="javascript" >
-           $.getJSON( "https://github.com/sliu00/setList/setList.json", 
+           $.getJSON( "setList.json", 
 		    function( data ) {
 			str = JSON.stringify(data);
 			console.log(str);
