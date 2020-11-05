@@ -28,10 +28,13 @@
                     var songStr = "";
                     setList.forEach(function(song) { 
                         var artists = "";
+                        song.artists.forEach(function(artist) {
+                            artists += artist + ", ";
+                        })
                         
                         songStr += 
-                            "<td class='song'>" + song.title  + "</td><td>" 
-                            + song.artists + "</td>";
+                            "<tr><td class='song'>" + song.title  + "</td><td>" 
+                            + artists + "</td></tr>";
                         document.getElementById("setList").innerHTML = songStr;
 
 
