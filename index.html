@@ -32,8 +32,8 @@
                     var songStr = "";
                     setList.forEach(function(song) { 
                         var artists = "";
-                        for (var i = 0; i < song.artist.length; i++) {
-                            artists += song.artist[i];
+                        for (var artist in song.artists) {
+                            artists += artist;
                         }
                        
                         
