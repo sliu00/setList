@@ -6,12 +6,32 @@
 
 <html>
     <body>
+        <div id="serialized"></div>
+        <hr>
+        <div id="prettier">
+    
+        </div>
+        <hr>
         <script language="javascript" >
-           $.getJSON( "setList.json", 
-		    function( data ) {
-			str = JSON.stringify(data);
-            document.write("<h2>Serialized JSON Data as a raw string: </h2> <br>" + str);
-	        })
+            $.getJSON( "setList.json", 
+		        function( setList ) {
+			        var str = JSON.stringify(setList);
+
+                    document.getElementById("serialized").innerHTML = 
+                        "<h2>Serialized JSON Data as a raw string: </h2> <br>" + str;
+                    
+                    var songStr = "";
+                    setList.forEach(function(song) { 
+
+                        songStr += 
+                            "<div class='song'>" + "<div class='title'>" 
+                            + song.title + "</div>" + "</div> <br>";
+
+
+                    
+                })
+
+
         </script>
     </body>
 </html>
