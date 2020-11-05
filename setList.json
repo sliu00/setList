@@ -13,49 +13,49 @@
     },
     {
         "title" : "D (Half Moon)",
-        "artist" : ["DEAN", "Gaeko"],
+        "artists" : ["DEAN", "Gaeko"],
         "genre" : ["R&B", "Soul"],
         "release" : 2016
     },
     {
         "title" : "3 Nights",
-        "artist" : ["Dominic Fike"],
+        "artists" : ["Dominic Fike"],
         "genre" : ["Alternative", "Indie"],
         "release" : 2018
     }, 
     {
         "title" : "the 1",
-        "artist" : ["Taylor Swift"],
+        "artists" : ["Taylor Swift"],
         "genre" : ["Alternative", "Indie"],
         "release" : 2020
     },
     {
         "title" : "Spring Day",
-        "artist" : ["BTS"],
+        "artists" : ["BTS"],
         "genre" : ["Kpop"],
         "release" : 2017
     },
     {
         "title" : "Getaway Car",
-        "artist" : ["Taylor Swift"],
+        "artists" : ["Taylor Swift"],
         "genre" : ["Alternative", "Indie"],
         "release" : 2020
     },
     {
         "title" : "ILYSB",
-        "artist" : ["LANY"],
+        "artists" : ["LANY"],
         "genre" : ["Indie", "Pop"],
         "release" : 2020
     },
     {
         "title" : "Dank",
-        "artist" : ["Jay Park"],
+        "artists" : ["Jay Park"],
         "genre" : ["R&B", "Soul"],
         "release" : 2018
     },
     {
         "title" : "Grow",
-        "artist" : ["HOAX"],
+        "artists" : ["HOAX"],
         "genre" : ["Alternative", "Indie"],
         "release" : 2018
     }
