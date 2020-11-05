@@ -31,11 +31,8 @@
                     
                     var songStr = "";
                     setList.forEach(function(song) { 
-                        var artists = "";
-                        song.forEach(function( artist ) {
-                            artists += ", " + artist;
-                        }) 
-                        console.log(artists);
+                     
+                        console.log(song.artists[0]);
                     })
                 })
 
