@@ -16,7 +16,6 @@
                 <th>Release Date</th>
             </tr>
         </table>
-        <hr>
         <script language="javascript" >
             $.getJSON( "setList.json", 
 		        function( setList ) {
@@ -33,7 +32,7 @@
                         })
                         
                         songStr += 
-                            "<tr><td class='song'>" + song.title  + "</td><td>" 
+                            "<tr><td>" + song.title  + "</td><td>" 
                             + artists + "</td></tr>";
                         document.getElementById("setList").innerHTML = songStr;
 
