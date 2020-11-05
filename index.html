@@ -33,6 +33,7 @@
                     setList.forEach(function(song) { 
                         var artists = "";
                         for (var artist in song.artists) {
+                            console.log(artist);
                             artists += artist;
                         }
                        
@@ -41,7 +42,7 @@
                             "<tr><td>" + song.title  + "</td><td>" 
                             + artists + "</td></tr>";
                         document.getElementById("setList").innerHTML = songStr;
-                        console.log(song.title + artists);
+                       
 
                     })
                 })
