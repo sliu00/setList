@@ -1,0 +1,62 @@
+[
+    {
+        "title" : "Indigo",
+        "artists" : ["NIKI", "88Rising"],
+        "genre" : ["R&B", "Soul"],
+        "release" : 2019
+    },
+    {
+        "title" : "Vintage",
+        "artists" : ["NIKI"],
+        "genre" : ["R&B", "Soul"],
+        "release" : 2018
+    },
+    {
+        "title" : "D (Half Moon)",
+        "artist" : ["DEAN", "Gaeko"],
+        "genre" : ["R&B", "Soul"],
+        "release" : 2016
+    },
+    {
+        "title" : "3 Nights",
+        "artist" : ["Dominic Fike"],
+        "genre" : ["Alternative", "Indie"],
+        "release" : 2018
+    }, 
+    {
+        "title" : "the 1",
+        "artist" : ["Taylor Swift"],
+        "genre" : ["Alternative", "Indie"],
+        "release" : 2020
+    },
+    {
+        "title" : "Spring Day",
+        "artist" : ["BTS"],
+        "genre" : ["Kpop"],
+        "release" : 2017
+    },
+    {
+        "title" : "Getaway Car",
+        "artist" : ["Taylor Swift"],
+        "genre" : ["Alternative", "Indie"],
+        "release" : 2020
+    },
+    {
+        "title" : "ILYSB",
+        "artist" : ["LANY"],
+        "genre" : ["Indie", "Pop"],
+        "release" : 2020
+    },
+    {
+        "title" : "Dank",
+        "artist" : ["Jay Park"],
+        "genre" : ["R&B", "Soul"],
+        "release" : 2018
+    },
+    {
+        "title" : "Grow",
+        "artist" : ["HOAX"],
+        "genre" : ["Alternative", "Indie"],
+        "release" : 2018
+    }
+]
