@@ -32,18 +32,10 @@
                     var songStr = "";
                     setList.forEach(function(song) { 
                         var artists = "";
-                        for (var i = 0; i < song.artists.length) {
-                            console.log(artist);
-                            artists += artist;
+                        for (var i = 0; i < song.artists.length(); i++) {
+                            artists += artist + ", ";
+                            document.getElementById("setList").innerHTML += artists
                         }
-                       
-                        
-                        songStr += 
-                            "<tr><td>" + song.title  + "</td><td>" 
-                            + artists + "</td></tr>";
-                        document.getElementById("setList").innerHTML += songStr;
-                       
-
                     })
                 })
 
