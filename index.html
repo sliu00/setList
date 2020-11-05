@@ -10,7 +10,7 @@
            $.getJSON( "setList.json", 
 		    function( data ) {
 			str = JSON.stringify(data);
-			document.write(str);
+            document.write("<h2>Serialized JSON Data as a raw string: </h2> <br>" + str);
 	        })
         </script>
     </body>
