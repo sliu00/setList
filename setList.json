@@ -12,12 +12,6 @@
         "release" : 2018
     },
     {
-        "title" : "D (Half Moon)",
-        "artists" : ["DEAN", "Gaeko"],
-        "genre" : ["R&B", "Soul"],
-        "release" : 2016
-    },
-    {
         "title" : "3 Nights",
         "artists" : ["Dominic Fike"],
         "genre" : ["Alternative", "Indie"],
@@ -58,5 +52,11 @@
         "artists" : ["HOAX"],
         "genre" : ["Alternative", "Indie"],
         "release" : 2018
+    },
+    {
+        "title" : "D (Half Moon)",
+        "artists" : ["DEAN", "Gaeko"],
+        "genre" : ["R&B", "Soul"],
+        "release" : 2016
     }
 ]
