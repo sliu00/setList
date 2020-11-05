@@ -29,10 +29,11 @@
                     document.getElementById("serialized").innerHTML = 
                         "<h2>Serialized JSON Data as a raw string: </h2> <br>" + str;
                     
+
                     var songStr = "";
                     setList.forEach(function(song) { 
                      
-                        console.log(Object.keys( song.artists ).length);
+                        console.log("Genre: " + Object.keys( song.genre ).length);
                     })
                 })
 
