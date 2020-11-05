@@ -8,7 +8,14 @@
     <body>
         <div id="serialized"></div>
         <hr>
-        <table id="prettier" style="width: 90%"></table>
+        <table id="setList" style="width: 90%">
+            <tr>
+                <th>Song Title</th>
+                <th>Artist(s)</th>
+                <th>Genre(s)</th>
+                <th>Release Date</th>
+            </tr>
+        </table>
         <hr>
         <script language="javascript" >
             $.getJSON( "setList.json", 
@@ -21,14 +28,11 @@
                     var songStr = "";
                     setList.forEach(function(song) { 
                         var artists = "";
-                        song.artists.forEach(function(artist) {
-                            artists += artist + ",";
-                        })
-
+                        
                         songStr += 
                             "<tr class='song'>" + "<div class='title'>" 
-                            + song.title + "</div><br>" + "<div class='artist'>" + artists + "</tr>";
-                        document.getElementById("prettier").innerHTML = songStr;
+                            + song.title + "</div>" + "</tr>";
+                        document.getElementById("setList").innerHTML = songStr;
 
 
                     })
