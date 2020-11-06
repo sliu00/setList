@@ -16,7 +16,7 @@
 
     td {
         text-align: center;
-        border: 1px solid black;
+        border: 2px solid black;
         border-right: 2px solid black;
         padding: 5px;
     }
@@ -28,14 +28,17 @@
     th {
         border: 2px solid black;
     }
-   
+
+    h3 {
+        margin-bottom: 0%;
+    }
 </style>
 <html>
     <body>
         <div id="serialized"></div>
         <hr>
         <table id="setList">
-            <h2>JSON data displayed in a table</h2>
+            <h2>JSON Data Displayed in a Table</h2>
             <tr id="tableHeader">
                 <th>Song Title</th>
                 <th>Artist(s)</th>
@@ -43,6 +46,24 @@
                 <th>Release Date</th>
             </tr>
         </table>
+        <br><hr>
+        <h2>Filter by Genre</h2>
+        <form>
+            <select id="genres">
+                <option>Alternative</option>
+                <option>Indie</option>
+                <option>Kpop</option>
+                <option>Pop</option>
+                <option>R&B</option>
+                <option>Soul</option>
+            </select>
+            <button type="button" id="filter">Filter</button>
+
+        </form>
+        <div id="filtered">
+            <h3 id="header"></h3>
+            <ul id="list"></ul>
+        </div>
         <script language="javascript" >
             $.getJSON( "setList.json", 
 		        function( setList ) {
@@ -78,9 +99,25 @@
                             "<td>" + song.release + "</td>" + "</tr>";
                         document.getElementById("setList").innerHTML += songStr; 
                     })
+
+                    $("#filter").click(function() {
+                        var genre = $("#genres option:selected").text();
+                        document.getElementById("header").innerHTML = "Genre: " + genre;
+
+                        var filterStr = "";
+                        setList.forEach(function(song) {
+                            var genreLen = Object.keys(song.genre).length;
+                            for (var i = 0; i < genreLen; i++) {
+                                if (song.genre[i] == genre) {
+                                    filterStr += ("<li>" + song.title + "</li>");
+                                }
+                            }
+
+                        })
+                        document.getElementById("list").innerHTML = filterStr;
+
+                    })
                 })
-
-
         </script>
     </body>
 </html>
