@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<title>Set List</title>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script language="javascript" src="setList.json"></script>
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <title>Set List</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script language="javascript" src="setList.json"></script>
+</head>
+
 <style>
     body {
         height: auto;
+        padding: 20px;
+        font-family: 'Inconsolata', monospace;
+        background-color: rgb(24, 23, 23);
+        color: rgb(255, 255, 255);
     }
 
     table {
         width: 100%;
         padding: 5px;
-        border: 2px solid black;
+        border: 2px solid white;
     }
 
     td {
         text-align: center;
-        border: 2px solid black;
-        border-right: 2px solid black;
+        border: 2px solid white;
+        border-right: 2px solid white;
         padding: 5px;
     }
 
@@ -26,15 +34,27 @@
     }
 
     th {
-        border: 2px solid black;
+        border: 2px solid white;
     }
 
     h3 {
         margin-bottom: 0%;
     }
+    
+    #serialized, #setList {
+        padding-bottom: 15px;
+    }
+    select, button {
+        font-family: 'Inconsolata', monospace;
+    }
+
+    #header {
+        color: rgb(162, 226, 58);
+    }
 </style>
 <html>
     <body>
+        <h1 style="text-align: center; color: rgb(162, 226, 58);">Set List</h1>
         <div id="serialized"></div>
         <hr>
         <table id="setList">
@@ -47,7 +67,7 @@
             </tr>
         </table>
         <br><hr>
-        <h2>Filter by Genre</h2>
+        <h2 style="color: rgb(162, 226, 58);">Filter by Genre</h2>
         <form>
             <select id="genres">
                 <option>Alternative</option>
